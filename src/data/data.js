@@ -24,5 +24,6 @@ export const data=[
         github:"https://github.com/JorgeGS1998/DSF-Bank-",
         live:"https://dsf-bank.vercel.app/",
     },
+    
 
 ]

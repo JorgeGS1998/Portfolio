@@ -10,9 +10,9 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <nav className="relative w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <img src={Logo} alt="logo image" style={{ width: "50px" }} />
+       {/* //<img src="" alt="logo image" style={{ width: "50px" }} />*/ }
       </div>
       <ul className='hidden md:flex'>
         <li>
@@ -83,33 +83,6 @@ function NavBar() {
           </Link>
         </li>
       </ul>
-      
-      {/*Social Icons*/}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-            <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/jorge-lucas-dev-web/">
-              Linkedin <FaLinkedin size={30}/>
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
-            <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/JorgeGS1998">
-              Github <FaGithub size={30}/>
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-            <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/jorge-lucas-dev-web/">
-              E-mail <HiOutlineMail size={30}/>
-            </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/jorge-lucas-dev-web/">
-              Resume <BsFillPersonLinesFill size={30}/>
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </nav>
   );
 }
