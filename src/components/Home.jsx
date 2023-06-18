@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
-import curriculo from '../assets/resume.pdf'
+
 const Home = () => {
   return (
     <div id="home" className="w-full h-screen bg-[#0a192f] text-gray-100">
@@ -48,6 +48,16 @@ const Home = () => {
                 <FaWhatsapp />
               </div>
             </a>
+            <a
+              href="https://drive.google.com/file/d/1siFY0rI1vtN1VmKfEksASsrpuJo6C50B/view" 
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full bg-pink-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FiDownload />
+              </div>
+            </a>
+
 
           </div>
         </div>
