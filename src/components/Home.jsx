@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
-
+import curriculo from '../assets/resume.pdf'
 const Home = () => {
   return (
     <div id="home" className="w-full h-screen bg-[#0a192f] text-gray-100">
@@ -12,7 +12,7 @@ const Home = () => {
             Jorge Lucas
           </h1>
           <h1 className="py-2 text-4xl sm:text-6xl font-bold text-[#8892b0] ">
-            Full Stack Developer.
+          Software Developer.
           </h1>
           <p className="py-4  sm:max-w-[70%]">
             Desenvolvedor apaixonado por tecnologia e comprometido em criar
@@ -21,7 +21,7 @@ const Home = () => {
           </p>
           <div className="flex items-center gap-5 max-w-[330px] py-4">
           <a
-              href="https://github.com/JorgeGS1998" 
+              href="https://www.linkedin.com/in/jorge-lucas-dev-web/" 
               target="_blank"
               rel="noreferrer"
             >
@@ -39,13 +39,16 @@ const Home = () => {
               </div>
             </a>
 
-            <div className="rounded-full  bg-pink-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaWhatsapp />
-            </div>
+            <a
+              href="https://wa.me/5563984399624" 
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full bg-pink-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaWhatsapp />
+              </div>
+            </a>
 
-            <button className="rounded-full  bg-pink-600 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FiDownload href="" />
-            </button>
           </div>
         </div>
       </div>
